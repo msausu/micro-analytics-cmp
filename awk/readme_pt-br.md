@@ -8,8 +8,8 @@
 
 1. Entrada
 
-- `MovtoITEM.xlsx`: planilha de movimento (entrada de dados)
-- `SaldoITEM.xlsx`: planilha de saldo (entrada de dados)
+- `../data/MovtoITEM.xlsx`: planilha de movimento (entrada de dados)
+- `../data/SaldoITEM.xlsx`: planilha de saldo (entrada de dados)
 
 2. Apoio
 

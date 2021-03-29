@@ -1,5 +1,5 @@
 
-## `sql` (`sqlite`)
+## `sql`
 
 1. `unoconv` para conversão de xlsx para (arquivos intermediários) csv
 2. `sqlite3` para geração do resultado
