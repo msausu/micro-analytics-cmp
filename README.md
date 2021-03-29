@@ -12,45 +12,53 @@ during the corresponding period.
 
 ## Expected outcome
 
-1. A database (spreadsheet or CSV) containing the DAILY movement of each ITEM, as follows:
+> *A database (spreadsheet or CSV) containing the DAILY movement of each ITEM, as follows*:
 
-The. Item: text format
-a. Release date: dd/mm/yyyy format
-b. INPUT entries: quantity, decimal format
-c. INPUT entries: value, decimal format
-d. OUTPUT entries: quantity, decimal format
-e. OUTPUT entries: value, decimal format
-f. Initial balance in quantity, decimal format
-g. Initial balance in value, decimal format
-h. Final balance in quantity, decimal format
-i. Final balance in value, decimal format
+<ol type="a">
+<li>The item: text format
+<li>Release date: dd/mm/yyyy format
+<li>INPUT entries: quantity, decimal format
+<li>INPUT entries: value, decimal format
+<li>OUTPUT entries: quantity, decimal format
+<li>OUTPUT entries: value, decimal format
+<li>Initial balance in quantity, decimal format
+<li>Initial balance in value, decimal format
+<li>Final balance in quantity, decimal format
+<li>Final balance in value, decimal format
+</ol>
 
 ## Details
 
-a. There may be several entries, either inbound or outbound, for each item in the same
+<ol type="a">
+<li> There may be several entries, either inbound or outbound, for each item in the same
 day. Important that the final basis is daily. That is, it is necessary to do the due
 daily grouping for each item, adding all occurrences of entry and/or corresponding output
-b. The general balance formula is: `final balance = opening balance + inflow - outflow`
-c. In the balance file, the start and end dates define the total movement period
+<li> The general balance formula is: `final balance = opening balance + inflow - outflow`
+<li> In the balance file, the start and end dates define the total movement period
+</ol>
 
 ## Source Data
 
 ### `SaldoITEM.xlsx` file
 
-a. Item: product item code
-b. start\_date: base date of the initial balance of the item
-c. qty\_initial: opening balance, in quantity
-d. initial\_value: opening balance, in value
-e. end\_date: base date of the final balance of the item
-f. final\_type: final balance, in quantity
-g. final\_value: final balance, in value
+<ol type="a">
+<li> Item: product item code
+<li> start\_date: base date of the initial balance of the item
+<li> qty\_initial: opening balance, in quantity
+<li> initial\_value: opening balance, in value
+<li> end\_date: base date of the final balance of the item
+<li> final\_type: final balance, in quantity
+<li> final\_value: final balance, in value
+</ol>
 
 ### `MovtoITEM.xlsx` file
 
-a. item: product item code
-b. movement\_type:
+<ol type="a">
+<li> item: product item code
+<li> movement\_type:
    “Ent” means entry movement of the item in stock
    "Out" means outbound movement of the item in stock
-c. release_date: date on which the move_type for the item occurred
-d. quantity: quantity of type\_movement of the item
-e. value: value of the item's move\_type 
+<li> release\_date: date on which the move\_type for the item occurred
+<li> quantity: quantity of type\_movement of the item
+<li> value: value of the item's move\_type 
+</ol>
