@@ -33,7 +33,7 @@ during the corresponding period.
 <li> There may be several entries, either inbound or outbound, for each item in the same
 day. Important that the final basis is daily. That is, it is necessary to do the due
 daily grouping for each item, adding all occurrences of entry and/or corresponding output
-<li> The general balance formula is: `final balance = opening balance + inflow - outflow`
+   <li> The general balance formula is: <code>final balance = opening balance + inflow - outflow</code>
 <li> In the balance file, the start and end dates define the total movement period
 </ol>
 
@@ -43,22 +43,22 @@ daily grouping for each item, adding all occurrences of entry and/or correspondi
 
 <ol type="a">
 <li> Item: product item code
-<li> start\_date: base date of the initial balance of the item
-<li> qty\_initial: opening balance, in quantity
-<li> initial\_value: opening balance, in value
-<li> end\_date: base date of the final balance of the item
-<li> final\_type: final balance, in quantity
-<li> final\_value: final balance, in value
+<li> start_date: base date of the initial balance of the item
+<li> qty_initial: opening balance, in quantity
+<li> initial_value: opening balance, in value
+<li> end_date: base date of the final balance of the item
+<li> final_type: final balance, in quantity
+<li> final_value: final balance, in value
 </ol>
 
 ### `MovtoITEM.xlsx` file
 
 <ol type="a">
 <li> item: product item code
-<li> movement\_type:
-   “Ent” means entry movement of the item in stock
-   "Out" means outbound movement of the item in stock
-<li> release\_date: date on which the move\_type for the item occurred
-<li> quantity: quantity of type\_movement of the item
-<li> value: value of the item's move\_type 
+<li> movement_type:
+   <code>Ent</code> means entry movement of the item in stock
+   <code>Out</code> means outbound movement of the item in stock
+<li> release_date: date on which the move_type for the item occurred
+<li> quantity: quantity of type_movement of the item
+<li> value: value of the item's move_type 
 </ol>
